@@ -1,13 +1,5 @@
 {
   "experimental": {
-    "clash_api": {
-      "external_controller": "0.0.0.0:9090",
-      "external_ui": "ui",
-      "secret": "",
-      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
-      "external_ui_download_detour": "🐋 默认节点",
-      "default_mode": "rule"
-    },
     "cache_file": {
       "enabled": true
     }
@@ -25,7 +17,7 @@
       },
       {
         "tag": "cn_dns",
-        "address": "114.114.114.114",
+        "address": "223.5.5.5",
         "detour": "🚅 国内流量"
       }
     ],
@@ -88,11 +80,6 @@
     },
     {
       "type": "selector",
-      "tag": "📺 哔哩哔哩",
-      "outbounds": ["🚅 国内流量", "🐋 默认节点", "⚙️ 手动切换", "🎚️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🇯🇵 日本节点"]
-    },
-    {
-      "type": "selector",
       "tag": "🤖 海外AI服务",
       "outbounds": ["🐋 默认节点", "⚙️ 手动切换", "🎚️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🚅 国内流量"]
     },
@@ -109,11 +96,6 @@
     {
       "type": "selector",
       "tag": "🗃️ PayPal",
-      "outbounds": ["🐋 默认节点", "⚙️ 手动切换", "🎚️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🚅 国内流量"]
-    },
-    {
-      "type": "selector",
-      "tag": "📽️ 黑猫emby",
       "outbounds": ["🐋 默认节点", "⚙️ 手动切换", "🎚️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🚅 国内流量"]
     },
     {
@@ -298,14 +280,6 @@
         "download_detour": "🐋 默认节点"
       },
       {
-        "tag": "bilibili",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/bilibili.srs",
-        "update_interval": "24h",
-        "download_detour": "🐋 默认节点"
-      },
-      {
         "tag": "notcn",
         "type": "remote",
         "format": "binary",
@@ -329,14 +303,6 @@
       {
         "clash_mode": "Global",
         "outbound": "🐋 默认节点"
-      },
-      {
-        "domain_suffix": ["uuuoo.cc", "emby.bid", "emby.date", "emby.loan", "emby.trade"],
-        "outbound": "📽️ 黑猫emby"
-      },
-      {
-        "rule_set": "bilibili",
-        "outbound": "📺 哔哩哔哩"
       },
       {
         "rule_set": "paypal",
