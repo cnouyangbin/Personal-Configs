@@ -61,7 +61,7 @@
       {"rule_set": "geosite-telegram", "outbound": "📲 Telegram"},
       {"rule_set": "geosite-tiktok", "outbound": "🎵 TikTok"},
       {"rule_set": "geosite-netflix", "outbound": "🎥 Netflix"},
-      {"domain_suffix":["hongxingyunmovie.vip"]", "outbound": "🎥 Emby"},
+      {"domain_suffix": ["hongxingyunmovie.vip"]", "outbound": "🎥 Emby"},
       {"rule_set": "geosite-paypal", "outbound": "💶 PayPal"},
       {"rule_set": "geosite-steamcn", "outbound": "🎯 全球直连"},
       {"rule_set": "geosite-steam", "outbound": "🎮 Steam"},
